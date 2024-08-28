@@ -2,5 +2,52 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
 
+h1 {
+    font-size: 20px;
+}
+/* #1B1C1E */
+/* #3B3C3E */
+/* #5B5C5E -> button text */
+/* Font Inter */
+
+.container {
+    margin: 1rem;
+}
+
+.header {
+    display: flex;
+}
+
+.primary-button {
+    border-radius: 12px;
+    background-color: #6b3c9b;
+    color: #fff;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+}
+
+.primary-button:hover {
+    background-color: #844dba;
+}
+
+.primary-button:active {
+    background-color: #5b2f87;
+}
+
+.primary-button.large {
+    width: 344px;
+}
+
+.primary-button.medium {
+    width: 140px;
+}
+
+.primary-button.small {
+    width: 64px;
 }
