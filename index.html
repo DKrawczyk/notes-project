@@ -18,28 +18,43 @@
                     <img src="/icons/file-icon.svg" />
                     <h1>Notes</h1>
                 </div>
-                <!-- <div class="input-container">
-                    <input type="text" placeholder="Search">
-                    <button class="test"></button>
-                </div> -->
+
                 <div class="search-bar">
                     <input id="search" placeholder="Search notes..." />
                 </div>
             </header>
             <section class="notes-section">
-                <div class="no-content">
+                <div class="no-content hidden">
                     <img src="/icons/info-circle.svg" />
                     <h1>No notes yet</h1>
                     <p>Add a note to keep track of your learnings.</p>
-                    <button class="secondary-button medium">Delete</button>
+                    <button class="secondary-button medium" id="add-note">
+                        <img src="/icons/add-note.svg" />Add Note
+                    </button>
+                </div>
+                <div class="adding-note">
+                    <div>
+                        <h1>Add new note</h1>
+                        <span>Cancel</span>
+                    </div>
+                    <form>
+                        <input type="text" placeholder="Note title" />
+                        <textarea placeholder="Your note..."></textarea>
+                    </form>
                 </div>
             </section>
-            <!-- <button class="primary-button large">Add New</button>
-                <button class="primary-button medium">Delete</button>
-                <button class="primary-button small">Add</button> -->
         </main>
         <script type="module" src="/scripts/main.js"></script>
     </body>
 </html>
 
 <!-- max header 20px, paragraph 16px -->
+<!-- <div class="input-container">
+                    <input type="text" placeholder="Search">
+                    <button class="test"></button>
+                </div> -->
+<!-- 
+    <button class="primary-button large">Add New</button>
+    <button class="primary-button medium">Delete</button>
+    <button class="primary-button small">Add</button> 
+-->
