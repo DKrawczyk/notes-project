@@ -18,29 +18,45 @@
                     <img src="/icons/file-icon.svg" />
                     <h1>Notes</h1>
                 </div>
-
                 <div class="search-bar">
-                    <input id="search" placeholder="Search notes..." />
+                    <input class="default-input" id="search" placeholder="Search notes..." />
                 </div>
             </header>
             <section class="notes-section">
-                <div class="no-content hidden">
+                <div class="no-content">
                     <img src="/icons/info-circle.svg" />
                     <h1>No notes yet</h1>
                     <p>Add a note to keep track of your learnings.</p>
                     <button class="secondary-button medium" id="add-note">
                         <img src="/icons/add-note.svg" />Add Note
                     </button>
+                    <!-- <button class="primary-button large">Add New</button> -->
                 </div>
-                <div class="adding-note">
-                    <div>
+                <div class="adding-note hidden">
+                    <div class="new-note-header">
                         <h1>Add new note</h1>
-                        <span>Cancel</span>
+                        <span class="cancel-click">Cancel</span>
                     </div>
-                    <form>
-                        <input type="text" placeholder="Note title" />
-                        <textarea placeholder="Your note..."></textarea>
+                    <form id="note-form">
+                        <input class="default-input" type="text" placeholder="Note title" id="note-title" />
+                        <div class="textarea-wrapper">
+                            <textarea class="default-input" placeholder="Your note..." id="note-content"></textarea>
+                            <button class="primary-button small hidden" id="insert-note">Add</button>
+                        </div>
+                        <span id="error-message" class="error"></span>
                     </form>
+                </div>
+                <div class="notes-wrapper hidden">
+                    <button class="primary-button large" id="test">Add new</button>
+                    <div class="notes">
+                        <!--  <input value="Note Title" disabled></input>
+                        <input value="Note Body" disabled></input>
+                        <span class="note-date">May 22</span>
+                        <div class="icons-wrapper">
+                            <button class="icon-button"><img src="/icons/edit-icon.svg" /></button>
+                            <button class="icon-button"><img src="/icons/bin-icon.svg" /></button>
+                        </div> -->
+                    </div>
                 </div>
             </section>
         </main>
