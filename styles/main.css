@@ -156,7 +156,7 @@ input {
     background-color: #eeeff0;
     border-radius: 12px;
     border: none;
-    height: 40px;
+    min-height: 40px;
     min-width: 344px;
     max-width: 344px;
     padding: 8px 12px;
@@ -306,7 +306,7 @@ input {
 .edit-button {
     position: absolute;
     right: 12px;
-    bottom: 28px;
+    bottom: 0px;
 }
 
 .overlay {
@@ -317,4 +317,16 @@ input {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 999;
+}
+
+.editable-span {
+    margin: 12px 0;
+    overflow-wrap: break-word;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+}
+
+.editable-span[contenteditable='true'] {
+    padding: 8px 12px;
 }
