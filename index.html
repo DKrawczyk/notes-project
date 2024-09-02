@@ -13,6 +13,7 @@
     </head>
     <body>
         <main class="container">
+            <div class="overlay hidden"></div>
             <header class="header">
                 <div class="header-title">
                     <img src="/icons/file-icon.svg" />
@@ -30,7 +31,6 @@
                     <button class="secondary-button medium" id="add-note">
                         <img src="/icons/add-note.svg" />Add Note
                     </button>
-                    <!-- <button class="primary-button large">Add New</button> -->
                 </div>
                 <div class="adding-note hidden">
                     <div class="new-note-header">
@@ -47,30 +47,19 @@
                     </form>
                 </div>
                 <div class="notes-wrapper hidden">
-                    <button class="primary-button large" id="test">Add new</button>
-                    <div class="notes">
-                        <!--  <input value="Note Title" disabled></input>
-                        <input value="Note Body" disabled></input>
-                        <span class="note-date">May 22</span>
-                        <div class="icons-wrapper">
-                            <button class="icon-button"><img src="/icons/edit-icon.svg" /></button>
-                            <button class="icon-button"><img src="/icons/bin-icon.svg" /></button>
-                        </div> -->
-                    </div>
+                    <button class="primary-button large" id="add-another-note">Add new</button>
+                    <div class="notes"></div>
                 </div>
             </section>
+            <div class="delete-modal hidden">
+                <h1>Delete Note</h1>
+                <p>Are you sure you want to delete this note?</p>
+                <div class="buttons-wrapper">
+                    <button class="secondary-button medium" id="cancel-delete">Cancel</button>
+                    <button class="primary-button medium" id="confirm-delete">Delete</button>
+                </div>
+            </div>
         </main>
         <script type="module" src="/scripts/main.js"></script>
     </body>
 </html>
-
-<!-- max header 20px, paragraph 16px -->
-<!-- <div class="input-container">
-                    <input type="text" placeholder="Search">
-                    <button class="test"></button>
-                </div> -->
-<!-- 
-    <button class="primary-button large">Add New</button>
-    <button class="primary-button medium">Delete</button>
-    <button class="primary-button small">Add</button> 
--->
